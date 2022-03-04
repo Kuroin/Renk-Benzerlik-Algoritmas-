@@ -66,6 +66,8 @@ def benzer_bul(A):
     en_yuksek_benzerlik=0
     en_benzer= "Yok"
     for i in hex_to_rgb():
+        if A == i[0]:
+            continue
         sim = vectorBenzerlik(A,i[0])
 
         if sim > en_yuksek_benzerlik:
